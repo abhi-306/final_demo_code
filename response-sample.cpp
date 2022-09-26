@@ -1,0 +1,30 @@
+{
+    "unicast":"192.168.1.13",
+    "logging":
+    {
+        "level":"warning",
+        "console":"true",
+        "file":
+        {
+            "enable":"false",
+            "path":"/tmp/someip.log"
+        },
+        "dlt":"false"
+    },
+    "applications":
+    [
+        {
+            "name":"request-sample",
+            "id":"0x7799",
+            "num_dispatchers":"5"
+        }
+    ],
+    "routing":"request-sample",
+    "service-discovery":
+    {
+        "enable":"true",
+        "multicast":"224.0.0.1",
+        "port":"30490",
+        "protocol":"udp"
+    }
+}
